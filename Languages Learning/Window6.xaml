@@ -1,0 +1,28 @@
+﻿<Window x:Class="Languages_Learning.Window6"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Languages_Learning"
+        mc:Ignorable="d"
+        Title="Poetry Reading" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="textbox" HorizontalAlignment="Left" Height="206" Margin="177,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="421"/>
+        <Button x:Name="_return" Content="Return" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Margin="13,10,0,0" FontFamily="Papyrus" Click="_return_Click"/>
+        <Button x:Name="play" Content="Play" HorizontalAlignment="Left" Margin="637,18,0,0" VerticalAlignment="Top" Width="122" Height="32" FontFamily="Papyrus" FontSize="16" Click="play_Click"/>
+        <Button x:Name="pause" Content="Pause/Continue" HorizontalAlignment="Left" Margin="637,69,0,0" VerticalAlignment="Top" Width="122" Height="32" FontFamily="Papyrus" FontSize="16" Click="pause_Click"/>
+        <Button x:Name="last" HorizontalAlignment="Left" Margin="637,121,0,0" VerticalAlignment="Top" Width="122" Height="32" FontSize="16" FontFamily="Papyrus" Content="Last" Click="last_Click"/>
+        <Button x:Name="next" Content="Next" HorizontalAlignment="Left" Margin="637,170,0,0" VerticalAlignment="Top" Width="122" Height="32" FontFamily="Papyrus" FontSize="16" Click="next_Click"/>
+        <Button Content="关雎" HorizontalAlignment="Left" Margin="34,58,0,0" VerticalAlignment="Top" Width="114" Height="32" FontFamily="Microsoft YaHei" Click="Button_Click"/>
+        <Button Content="寒食" HorizontalAlignment="Left" Margin="34,122,0,0" VerticalAlignment="Top" Width="114" Height="32" Click="Button_Click_1"/>
+        <Button Content="静夜思" HorizontalAlignment="Left" VerticalAlignment="Top" Width="114" Margin="34,184,0,0" Height="32" Click="Button_Click_2"/>
+        <Button Content="清明" HorizontalAlignment="Left" Margin="34,243,0,0" VerticalAlignment="Top" Width="114" Height="36" Click="Button_Click_3"/>
+        <Button Content="元日" HorizontalAlignment="Left" Margin="34,309,0,0" VerticalAlignment="Top" Width="114" Height="36" Click="Button_Click_4"/>
+        <Label x:Name="volume" Content="Volume" HorizontalAlignment="Left" Margin="203,240,0,0" VerticalAlignment="Top" FontFamily="Papyrus" FontSize="20"/>
+        <Label x:Name="speed" Content="Speed" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="203,309,0,0" FontFamily="Papyrus" FontSize="20"/>
+        <Slider x:Name="slider1" HorizontalAlignment="Left" Margin="298,251,0,0" VerticalAlignment="Top" Width="262"  RenderTransformOrigin="2.528,0.315"  Maximum="100" ValueChanged="Slider_ValueChanged"/>
+        <Slider x:Name="slider2" HorizontalAlignment="Left" Margin="298,321,0,0" VerticalAlignment="Top" Width="262"  RenderTransformOrigin="-6.194,-1.537" Minimum="-10" ValueChanged="Slider_ValueChanged_1"/>
+        <Image HorizontalAlignment="Left" Margin="565,260,-4.667,0" VerticalAlignment="Top" Source="Resources/3.jpg" Height="151" Width="233"/>
+
+    </Grid>
+</Window>

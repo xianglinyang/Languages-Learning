@@ -1,0 +1,36 @@
+﻿<Window x:Name="Listening" x:Class="Languages_Learning.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Languages_Learning"
+        mc:Ignorable="d"
+        Title="Listening" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="textbox" HorizontalAlignment="Left" Height="190" Margin="154,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="476" AcceptsReturn="True" VerticalScrollBarVisibility="Visible"  TextChanged="TextBox_TextChanged" FontFamily="Papyrus" FontSize="14" />
+        <Button x:Name="_return" Content="Return" HorizontalAlignment="Left" Margin="21,14,0,0" VerticalAlignment="Top" Width="75" FontFamily="Papyrus" Click="_return_Click"/>
+        <Button x:Name="speak_button" Content="Speak" HorizontalAlignment="Left" Margin="659,37,0,0" VerticalAlignment="Top" Width="112" FontFamily="Papyrus" Height="25" Click="speak_Click"/>
+        <Button x:Name="pause_or_continue" Content="Pause/Continue" HorizontalAlignment="Left" Margin="659,83,0,0" VerticalAlignment="Top" Width="112" Height="25" FontFamily="Papyrus" Click="pause_or_continue_Click"/>
+        <Button x:Name="reset" Content="Reset" HorizontalAlignment="Left" Margin="659,128,0,0" VerticalAlignment="Top" Width="112" Height="25" FontFamily="Papyrus" Click="reset_Click"/>
+        <ComboBox x:Name="ComboBox1" HorizontalAlignment="Left" Margin="297,251,0,0" VerticalAlignment="Top" Width="305" Height="21" RenderTransformOrigin="0.5,0.5" SelectedIndex="0" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.002"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ComboBox.RenderTransform>
+        </ComboBox>
+        <Label x:Name="voice" Content="Voice" HorizontalAlignment="Left" Margin="209,243,0,0" VerticalAlignment="Top" FontFamily="Papyrus" FontSize="18"/>
+        <Label x:Name="speed" Content="Speed" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="206,289,0,0" FontFamily="Papyrus" FontSize="18"/>
+        <Slider x:Name="Slider1" HorizontalAlignment="Left" Margin="299,299,0,0" VerticalAlignment="Top" RenderTransformOrigin="-6.194,-1.537" Width="294" Minimum="-10" ValueChanged="Slider_ValueChanged"/>
+        <Label x:Name="volume" Content="Volume" HorizontalAlignment="Left" Margin="208,337,0,0" VerticalAlignment="Top" FontFamily="Papyrus" FontSize="18"/>
+        <Slider x:Name="Slider2" HorizontalAlignment="Left" Margin="299,347,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.528,0.315" Width="294" ValueChanged="Slider_ValueChanged_1" Maximum="100"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Margin="593,278,0,-0.333" VerticalAlignment="Top" Source="Resources/1.jpg" Height="143" Width="200"/>
+        <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Height="23" Margin="659,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="112" TextChanged="TextBox2_TextChanged"/>
+        <Button x:Name="GetWave_button" Content="GetWave" HorizontalAlignment="Left" Margin="659,174,0,0" VerticalAlignment="Top" Width="112" Height="25" FontFamily="Papyrus" Click="GetWave_Click"/>
+        <Label Content="name:" HorizontalAlignment="Left" Margin="659,206,0,0" VerticalAlignment="Top" FontFamily="Papyrus"/>
+        <Image HorizontalAlignment="Left" Height="219" Margin="10,317,0,-115.333" VerticalAlignment="Top" Width="191" Source="Resources/6.jpg"/>
+    </Grid>
+</Window>
